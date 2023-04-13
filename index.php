@@ -38,13 +38,4 @@ try {
 } finally {
     echo "Ma voiture roule comme un donut !";
 }
-
-
-
-
-
-
-
-
-
 ?>
