@@ -36,7 +36,7 @@ class Car extends Vehicle
         $this->hasParkBrake = $brakState;
     }
 
-    public function getParkBrake()
+    public function getParkBrake(): void
     {
         if ($this->hasParkBrake){
         throw new Exception("Le frein à main est mis.");
