@@ -34,7 +34,7 @@ if ($break->getParkBrake()){
 try {
     echo $break->start();
 } catch (Exception $e){
-    echo $e->getMessage();
+    die($e->getMessage());
 } finally {
     echo "Ma voiture roule comme un donut !";
 }
