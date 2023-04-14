@@ -41,6 +41,5 @@ class Car extends Vehicle
         if ($this->hasParkBrake){
         throw new Exception("Le frein à main est mis.");
         }
-        return $this->hasParkBrake;
     }
 }
