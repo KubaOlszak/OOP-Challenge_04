@@ -23,18 +23,12 @@ echo $break->brake() ."<br>";   // ."<br>"
 
                         /*       Frein à main        */
                                 
-echo $break->setParkBrake(true);    // true ou false
-
-echo "Frein à main : " . $break->getParkBrake() ."<br>";
-
-if ($break->getParkBrake()){
-    throw new Exception("Le frein à main est mis.");
-}
+echo $break->setParkBrake(false);    // true ou false
 
 try {
     echo $break->start();
 } catch (Exception $e){
-    echo $e->getMessage();
+    die($e->getMessage());
 } finally {
     echo "Ma voiture roule comme un donut !";
 }
