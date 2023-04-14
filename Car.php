@@ -43,5 +43,4 @@ class Car extends Vehicle
         }
         return $this->hasParkBrake;
     }
-    
 }
